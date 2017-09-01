@@ -1,4 +1,4 @@
-Source code and data for classification of multiword expressions (MWEs) using context-based features.
+Source code and data for classification of Multiword Expressions (MWEs) using context-based features.
 
 We have conducted our extensive experiments with Italian. The experiments are augmented by applying the approach also for smaller data in Spanish andEnglish.
 
