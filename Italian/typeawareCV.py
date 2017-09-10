@@ -78,3 +78,40 @@ def typeaware_cross_val_multiClassifier(classifiers, X, y, seqs): # our ten fold
                         scores.append(sc)
                 allClfScores.append(np.array(scores))
         return allClfScores
+
+def evaluate(pred, yTest):
+        acc = 0
+        for i in range(len(yTest)):
+                if yTest[i][2] == pred[i][2]:
+                        acc+=1
+        return acc/len(yTest)
+
+def typeaware_cross_val_CRF(classifier, X, y, seqs): # our ten folds for cross-validation
+        scores = []
+        types = list(readTypes().keys())
+        random.shuffle(types)
+        testTypeSize = int(len(types)/10)
+        for i in range(10):
+                X_train, X_test, y_train, y_test = [], [], [], []
+                for j in range(len(seqs)):
+                        if seqs[j][1] in types[testTypeSize*i:testTypeSize*(i+1)]:
+                                X_test.append(X[j])
+                                y_test.append(y[j])
+                        else:
+                                X_train.append(X[j])
+                                y_train.append(y[j])
+
+                
+                X_train = np.array(X_train)
+                y_train = np.array(y_train)
+                X_test = np.array(X_test)
+                y_test = np.array(y_test)
+
+                classifier.fit(X_train, y_train)
+
+                y_pred = classifier.predict(X_test)
+                sc = evaluate(y_pred, y_test)
+
+                scores.append(sc)
+        return np.array(scores)
+
