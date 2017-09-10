@@ -115,3 +115,26 @@ def typeaware_cross_val_CRF(classifier, X, y, seqs): # our ten folds for cross-v
                 scores.append(sc)
         return np.array(scores)
 
+def rand_cross_val_CRF(classifier, X, y, cv):
+        seqs = list(zip(X, y))
+        fSize = int(len(seqs)/cv)
+        np.random.shuffle(seqs)
+        scores = []
+        for i in range(cv):
+                test = seqs[fSize*i:fSize*(i+1)]
+                train = seqs[0:fSize*i]+seqs[fSize*(i+1):]
+                test1 = list(zip(*test))
+                train1 = list(zip(*train))
+
+                X_test = np.array(test1[0])
+                y_test = np.array(test1[1])
+                X_train = np.array(train1[0])
+                y_train = np.array(train1[1])
+
+                classifier.fit(X_train, y_train)
+                #sc = classifier.score(X_test, y_test)
+
+                y_pred = classifier.predict(X_test)
+                sc = evaluate(y_pred, y_test)
+                scores.append(sc)
+        return np.array(scores)
