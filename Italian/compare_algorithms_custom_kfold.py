@@ -27,7 +27,7 @@ from sklearn.model_selection import GridSearchCV, cross_val_score, KFold, learni
 data = pickle.load(open("sequencesFinalWin2.pkl", 'rb'))
 
 # load word2vec model
-# THE FOLLOWING PATH SHOUL BE PROVIDE AND UN_COMMENTED
+# THE FOLLOWING PATH SHOULD BE PROVIDED AND UN_COMMENTED
 # model = Word2Vec.load(THE PATH TO WORD2VEC)
 
 # fill this in cases where a word is outside the vocabulary 
