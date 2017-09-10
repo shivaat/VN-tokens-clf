@@ -17,6 +17,7 @@ from itertools import chain
 from sklearn import preprocessing
 from gensim.models import Word2Vec
 from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
@@ -29,7 +30,7 @@ data = pickle.load(open("sequencesFinalWin2.pkl", 'rb'))
 random.shuffle(data)
 
 # load word2vec model
-# THE FOLLOWING PATH SHOUL BE PROVIDE AND UN_COMMENTED
+# THE FOLLOWING PATH SHOULD BE PROVIDED AND UN_COMMENTED
 # model = Word2Vec.load(THE PATH TO WORD2VEC)
 
 # fill this in cases where a word is outside the vocabulary 
