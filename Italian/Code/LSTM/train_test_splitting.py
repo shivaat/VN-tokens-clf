@@ -15,7 +15,8 @@ def readTypes():
 				types[l1[0]] = float(l1[2])
 	return list(types.keys())
 
-def train_test(seqs): # our 10-folds to be used for cross-validation
+"""type-aware 10-fold splitting to be used for cross-validation"""
+def train_test(seqs): 
 	train10 = []
 	test10 = []
 	types = readTypes()
@@ -32,7 +33,8 @@ def train_test(seqs): # our 10-folds to be used for cross-validation
 		train10.append(train)
 		test10.append(test)
 	return train10, test10
-	
+
+"""regular 10-fold splitting to be used for cross-validation"""
 from sklearn.model_selection import KFold
 from sklearn import cross_validation
 def random_kfold(seqs):
