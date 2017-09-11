@@ -106,5 +106,5 @@ def skCRFclassify(sf):
           print(scores)
           print(np.mean(scores), np.std(scores))
           
-skCRFclassify('../Data/sequencesWin2.pkl')
+skCRFclassify('../../Data/sequencesWin2.pkl')
  
