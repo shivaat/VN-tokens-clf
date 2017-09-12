@@ -86,7 +86,7 @@ def typeaware_cross_val_multiClassifier(classifiers, X, y, seqs):
 def evaluate(pred, yTest):
         acc = 0
         for i in range(len(yTest)):
-                if yTest[i][2] == pred[i][2]:
+                if yTest[i][2] == pred[i][2]: # This checks only the beginning of VN expression, which starts from index 2 of a sequence
                         acc+=1
         return acc/len(yTest)
 
