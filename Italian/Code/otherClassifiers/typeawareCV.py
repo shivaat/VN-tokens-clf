@@ -10,7 +10,7 @@ import numpy as np
 the expression was annotated by '1' (as opposed to '0')"""
 def readTypes():
 	types = {}
-	with open("../Data/typeDist.txt", "r", encoding="utf8") as f:
+	with open("../../Data/typeDist.txt", "r", encoding="utf8") as f:
 		lines = f.readlines()
 		for l in lines[15:]:
 			l1 = l.split('\t')
