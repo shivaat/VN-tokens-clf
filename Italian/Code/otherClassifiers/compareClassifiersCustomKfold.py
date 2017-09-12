@@ -32,7 +32,7 @@ from sklearn.svm import SVC
 from sklearn.model_selection import GridSearchCV, cross_val_score, KFold, learning_curve
 
 # load data
-data = pickle.load(open("sequencesWin2.pkl", 'rb'))
+data = pickle.load(open("../../Data/sequencesWin2.pkl", 'rb'))
 
 # load word2vec model
 # THE FOLLOWING PATH SHOUL BE PROVIDE AND COMMENTED OUT
