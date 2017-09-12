@@ -69,7 +69,7 @@ classifiers.append(RandomForestClassifier(random_state=random_state))
 classifiers.append(MLPClassifier(random_state=random_state))
 classifiers.append(SVC(random_state=random_state))
 
-clfName = ["LR","LDA","DT", "RF", "MLP","SVC"]
+clfName = ["LR","DT", "RF", "MLP","SVC"]
 
 cv_results = []
 from typeawareCV import *
