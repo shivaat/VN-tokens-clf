@@ -50,10 +50,10 @@ for tag in VNC_tokens:
           sent = getSentence(xmlText, tag[1])                    
           tagged_sents.append((sent, tag[2], tag[3]))
 
-with open("taggedSentsBNC.pkl",'wb') as f:
+with open("./Data/taggedSentsBNC.pkl",'wb') as f:
           pickle.dump(tagged_sents, f)
           
 '''
-seqs = pickle.load(open("sequencesBNC.pkl",'rb'))
+seqs = pickle.load(open("./Data/sequencesBNC.pkl",'rb'))
 print(len(seqs))
 '''
