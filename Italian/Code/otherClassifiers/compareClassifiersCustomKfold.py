@@ -23,6 +23,7 @@ from itertools import chain
 from sklearn import preprocessing
 from gensim.models import Word2Vec
 from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
