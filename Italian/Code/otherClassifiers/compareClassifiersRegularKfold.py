@@ -36,7 +36,7 @@ random.shuffle(data)
 nul = np.array([0] * 300)
 
 import typeawareCV
-selectedTypes = ourStratifiedCV.readTypes()
+selectedTypes = typeawareCV.readTypes()
 X_ = [s[0] for s in data if s[1] in selectedTypes]
 X = []
 for seq in X_:
