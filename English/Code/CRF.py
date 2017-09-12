@@ -73,25 +73,9 @@ def sent2labels(sent):
 def sent2tokens(sent):
         return [token for word, label in sent]
 
-
-#def train_test(X_train, y_train, X_test, y_test):
-def train_test(X_train, y_train, testData, X_test):
-        crf = sklearn_crfsuite.CRF(
-        algorithm='arow', 
-        #c1=0.1, # coefficient for L1 penalty
-        #c2=1e-3, # coefficient for L2 penalty
-        max_iterations=50,
-         # include transitions that are possible, but not observed 
-        all_possible_transitions=True)
-        crf.fit(X_train, y_train)
-        y_pred = crf.predict(X_test)
-
-        return y_pred
-
 ################################################
 ################################################
 ################################################
-
 
 ### Reading the whole data in the format of crfsuite
 ### list of sentences, each sentence containing tuples: (word, label)
