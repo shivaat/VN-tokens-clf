@@ -25,7 +25,7 @@ from sklearn.svm import SVC
 from sklearn.model_selection import cross_val_score, KFold
 
 # load data
-data = pickle.load(open("../Data/sequencesWin2.pkl", 'rb'))
+data = pickle.load(open("../../Data/sequencesWin2.pkl", 'rb'))
 random.shuffle(data)
 
 """load word2vec model"""
