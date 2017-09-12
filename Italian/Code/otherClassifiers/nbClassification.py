@@ -21,9 +21,9 @@ scores = []
 for traincv, testcv in cv:
           classifier = nltk.NaiveBayesClassifier.train(train_data[traincv[0]:traincv[len(traincv)-1]])
           scores.append(nltk.classify.util.accuracy(classifier, train_data[testcv[0]:testcv[len(testcv)-1]]))
-print(np.mean(scores))
+print("NB regular: ",np.mean(scores))
 
 """ Computing the results using type-aware cross-validation """
 from typeawareCV import *
 tpCVscores = typeaware_cross_val_nltk(nltk.NaiveBayesClassifier, train_data, seqs)
-print(np.mean(tpCVscores))
+print("NB type_aware: ", np.mean(tpCVscores))
