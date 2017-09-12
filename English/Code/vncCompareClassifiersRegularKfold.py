@@ -66,7 +66,7 @@ def getWords(sent):
           return 0
 
 # load data
-sents = pickle.load(open(".Data/taggedSentsBNC.pkl",'rb'))
+sents = pickle.load(open("../Data/taggedSentsBNC.pkl",'rb'))
 seqs = []
 # We don't consider the Q susbet in the dataset
 for s in sents:
