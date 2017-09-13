@@ -1,4 +1,4 @@
-"""random and type-aware train-test splitting for neural-nased classifiers"""
+"""random and type-aware train-test splitting for neural-based classifiers"""
 import pickle
 import random
 
