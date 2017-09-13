@@ -29,9 +29,9 @@ train_test_splitting.py
 deep_compare_VNC.py
 
 	Using this script we compared performances of several different neural network classifiers.
-    	The best performing model is the ConvNet+LSTM
-    	The results can be reported both using regular and type-aware cross-validation.
-    	Relevant lines should be commented/uncommented
+	The best performing model is the ConvNet+LSTM
+	The results can be reported both using regular and type-aware cross-validation.
+	Relevant lines should be commented/uncommented
 	
 init_weights.h5
 
