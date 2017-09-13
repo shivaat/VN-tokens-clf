@@ -1,8 +1,8 @@
 This directory includes the following files:
 
 typeAwareCV.py
-  
-        This file includes functions that perform different forms of cross-validation.
+  	
+	This file includes functions that perform different forms of cross-validation.
 	The fuctions are used by vncCompareClassifiersCustomKfold.py and vncCompareClassifiersRegularKfold.py 
   
 vncCompareClassifiersCustomKfold.py
