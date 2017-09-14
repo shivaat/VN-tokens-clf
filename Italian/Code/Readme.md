@@ -1,6 +1,6 @@
 This directory includes the following scripts in 2 folders otherClassifiers and neuralClassifiers:
 
-<b>otherClassifiers<\b>
+<b>otherClassifiers</b>
 
 typeAwareCV.py
 
@@ -23,7 +23,7 @@ CRF.py
 
     This file contains functions for the CRF classfier
     
-<b>neuralClassifiers<\b>    
+<b>neuralClassifiers</b>    
 
 train_test_splitting.py
 
