@@ -9,6 +9,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 # Load data
 data = pickle.load(open("../../Data/sequencesFinalWin2.pkl", 'rb'))
 
+#  s[0][2:] to match our word2vec vectors of the verb, the noun and the 2 words after
 X_ = [s[0][2:] for s in data]
 X = [" ".join(x) for x in X_]
 
