@@ -1,4 +1,4 @@
-"""This code is for performing the classification using Multiple Layer Perceptron using count based vectors a input"""
+"""This code is for performing the classification using Multiple Layer Perceptron using count based vectors as input"""
 # coding: utf-8
 
 import pickle
