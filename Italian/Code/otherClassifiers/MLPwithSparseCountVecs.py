@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
 # Load data
-data = pickle.load(open("../Data/sequencesFinalWin2.pkl", 'rb'))
+data = pickle.load(open("../../Data/sequencesFinalWin2.pkl", 'rb'))
 
 X_ = [s[0][2:] for s in data]
 X = [" ".join(x) for x in X_]
