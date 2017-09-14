@@ -23,6 +23,14 @@ CRF.py
 
     This file contains functions for the CRF classfier
     
+naivebayesClassification.py
+    
+    This file contains code for Naive Bayes classfier in both regular and type-aware scenario
+    
+MLPwithSparseCountVecs.py
+
+    This code is for performing the classification using Multiple Layer Perceptron using count based vectors a input
+    
 <b>neuralClassifiers</b>    
 
 train_test_splitting.py
