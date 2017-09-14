@@ -27,9 +27,9 @@ naivebayesClassification.py
 
     This file contains code for Naive Bayes classfier in both regular and type-aware scenario
 
-MLPwithSparseCountVecs.py
+classifyWithSparseCountVecs.py
 
-    This code is for performing the classification using Multiple Layer Perceptron using count based vectors a input
+    This code is for performing the classification using Multiple Layer Perceptron using count based vectors as input
 
 <b>neuralClassifiers</b>
 
@@ -38,13 +38,13 @@ train_test_splitting.py
     This file includes the fuctions for random and type-aware train-test splitting for neural-based classifiers
     The fuctions are used by deep_compare_VNC.py
 
-deep_compare.py
+deep_compare_es.py
 
     Using this script we compared performances of several different neural network classifiers.
     The best performing model is the ConvNet+LSTM
     The results can be reported both using regular and type-aware cross-validation.
     Relevant lines should be commented/uncommented
 
-init_weights.h5
+init_weights_es.h5
 
     This file contains the initial weights to be used by the neural based classifiers in deep_compare_VNC.py
