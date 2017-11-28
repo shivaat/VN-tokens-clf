@@ -147,6 +147,7 @@ def rand_cross_val_CRF(classifier, X, y, cv):
         return np.array(scores)
 
 """type-aware cross-validation for the NLTK classifiers (her, we only use naive bayes)"""
+import nltk
 def typeaware_cross_val_nltk(nltkClassifier, data, seqs):
         scores = []
         types = list(readTypes().keys())
