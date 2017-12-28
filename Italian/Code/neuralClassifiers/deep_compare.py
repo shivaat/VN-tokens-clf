@@ -169,7 +169,7 @@ def cross_validator(model, data):
     ### The following line for type-aware fold splitting
     train_datas, test_datas  = train_test(data)
 
-    ### The following 2 lines should be commented out for random fold splitting 
+    ### The following line should be commented out for random fold splitting 
     #train_datas, test_datas  = random_kfold(data)
     
     nn_model = model()
