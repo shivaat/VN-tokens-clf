@@ -30,7 +30,7 @@ from keras.preprocessing import sequence
 from keras.callbacks import EarlyStopping
 
 # load data
-data = pickle.load(open("../../Data/esSequencesWin2.pkl", 'rb'))
+data = pickle.load(open("../../Data/esSequencesWin2_agreed.pkl", 'rb'))
 random.shuffle(data)
 
 # load word2vec model
