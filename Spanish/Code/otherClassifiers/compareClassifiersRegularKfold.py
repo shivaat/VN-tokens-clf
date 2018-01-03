@@ -30,7 +30,7 @@ from sklearn.svm import SVC
 from sklearn.model_selection import GridSearchCV, cross_val_score, KFold, learning_curve
 
 # load data
-data = pickle.load(open("../../Data/esSequencesWin2.pkl", 'rb'))
+data = pickle.load(open("../../Data/esSequencesWin2_agreed.pkl", 'rb'))
 random.shuffle(data)
 
 """ load word2vec model """
