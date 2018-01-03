@@ -105,5 +105,5 @@ def skCRFclassify(sf):
           print(scores)
           print(np.mean(scores), np.std(scores))
           
-skCRFclassify('../../Data/esSequencesWin2.pkl')
+skCRFclassify('../../Data/esSequencesWin2_agreed.pkl')
  
