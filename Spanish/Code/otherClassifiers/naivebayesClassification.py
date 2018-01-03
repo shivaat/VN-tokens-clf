@@ -3,7 +3,7 @@
 import pickle
 
 """ load Data """ 
-seqs = pickle.load(open("../../Data/esSequencesWin2.pkl",'rb'))
+seqs = pickle.load(open("../../Data/esSequencesWin2_agreed.pkl",'rb'))
 
 import nltk
 import numpy as np
