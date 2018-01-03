@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
 # Load data
-data = pickle.load(open("../../Data/esSequencesWin2.pkl", 'rb'))
+data = pickle.load(open("../../Data/esSequencesWin2_agreed.pkl", 'rb'))
 
 
 #  s[0][2:] to match our word2vec vectors of the verb, the noun and the 2 words after
